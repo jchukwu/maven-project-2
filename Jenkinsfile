@@ -22,8 +22,8 @@ pipeline {
     stage('SonarQube Scan') {
       steps {
         sh """mvn sonar:sonar \
-              -Dsonar.host.url=http://52.12.24.21:9000 \
-              -Dsonar.login=1370196220e4a76dae5d5267cd6fdb6b2d3f94c7"""
+               -Dsonar.host.url=http://34.210.84.119:9000 \
+               -Dsonar.login=ed1b4672227597ffdb981bc4cffad3f6936d5d6f"""
       }
     }
     stage('Upload to Artifactory') {
